@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Görev Listesi</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Görev Listesi</h1>
+    <ul>
+    {% for task in tasks %}
+        <li>{{ task.title }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
